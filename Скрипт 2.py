@@ -15,3 +15,5 @@ sigma = mean_air_time_per_plane['mean_air_time_minutes'].std()
 
 params_df = pd.DataFrame({'parameter': ['mean', 'std'], 'value': [mu, sigma]})
 params_df.to_csv('normal_params.csv', index=False)
+
+print("Успех")
