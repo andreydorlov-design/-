@@ -21,3 +21,5 @@ result_sorted = result_filtered.sort_values('unique_planes', ascending=False)
 
 output_file = 'carrier_summary.csv'
 result_sorted.to_csv(output_file, index=False, encoding='utf-8')
+
+print("Успех")
