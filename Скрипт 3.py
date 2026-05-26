@@ -12,6 +12,3 @@ df_clean['speed'] = (df_clean['distance'] / df_clean['air_time']) * 60
 df_wn_ua = df_clean[df_clean['carrier'].isin(['WN', 'UA'])].copy()
 
 df_wn_ua.to_csv('flights_speed_WN_UA_clean.csv', index=False)
-
-print("Размер после очистки:", len(df_wn_ua))
-print("Пример данных:\n", df_wn_ua[['carrier', 'distance', 'air_time', 'speed']].head())
